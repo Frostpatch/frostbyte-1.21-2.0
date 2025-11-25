@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "frostbyte",
+	"version": "${version}",
+	"name": "FrostByte",
+	"description": "Tech maybe",
+	"authors": [
+		"Frostpatch"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/frostbyte/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.frostpatch.frostbyte.FrostByte"
+		],
+		"fabric-datagen": [
+			"net.frostpatch.frostbyte.FrostByteDataGenerator"
+		],
+		"client": [
+			"net.frostpatch.frostbyte.FrostByteClient"
+		]
+	},
+	"mixins": [
+		"frostbyte.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
